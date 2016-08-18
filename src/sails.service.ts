@@ -1,5 +1,6 @@
 import {Injectable, NgZone} from "@angular/core";
-import {Subject, Observable} from "rxjs/Rx";
+import {Observable} from "rxjs/Observable";
+import {Subject} from "rxjs/Subject";
 
 
 declare let io:any;
