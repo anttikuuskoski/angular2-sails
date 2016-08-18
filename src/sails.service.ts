@@ -101,6 +101,12 @@ export class SailsService {
     this._connected = true;
   }
 
+  public disconnect(): void {
+    if (this._connected) {
+      this._io.disconnect();
+      this._connected = false;
+    }
+  }
 
   /**
    * @title request
